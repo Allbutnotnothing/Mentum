@@ -1,0 +1,636 @@
+.comWidth {
+  width:940px;
+  margin:0 auto;
+}
+@font-face{
+  font-family:'Questrial';
+  src: url(../fonts/Questrial-Regular.ttf);
+}
+* {
+  font-family: 'Questrial', sans-serif;
+  line-height: 1.4em;
+}
+ .lightSection {
+  background-color:#f4f4f4;
+}
+.darkSection {
+  background-color:#192c3b;
+}
+/*
+  apply this to the first child of an element whose position is relative
+*/
+.darkRippleBgTop {
+  position: absolute;
+  top:-6px;
+  height:6px;
+  width:100%;
+  background: url(../images/ripple_dark_top.png) repeat-x bottom left;
+}
+.lightRippleBgTop {
+  position: absolute;
+  top:-6px;
+  height:6px;
+  width:100%;
+  background: url(../images/ripple_light_top.png) repeat-x bottom left;
+}
+.whiteRippleBgTop {
+  position: absolute;
+  top:-10px;
+  height:10px;
+  width:100%;
+  background: url(../images/ripple_white_top.png) repeat-x bottom left;
+}
+
+h3.subTitle {
+  font-size: 20px;
+  color:#5e6c76;
+  text-align: center;
+  width:70%;
+  margin-left:15%;
+  font-weight:normal;
+  margin-bottom: 60px;
+}
+.darkSection h3.subTitle{
+  color:#8c969d;
+}
+.itemCard {
+  width:280px;
+  position:relative;
+  overflow:hidden;
+  float: left;
+} /* 需要额外定义的：height */
+.itemCard+.itemCard {
+  margin-left:50px;
+}
+.itemCardsRow {
+  /* margin-bottom:50px; */
+  padding-bottom: 50px;
+}
+
+.cyanBtn {
+  padding:10px 34px;
+  background: #0bc7b4;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+  border-bottom: solid 3px #029381;
+  border-left:0px;
+  border-top:0px;
+  border-right:0px;
+}
+.cyanBtn:hover {
+  background:#0ab7a5;
+  color: #ddd;
+}
+.cyanFlatBtn {
+  display: inline-block;
+  font-size: 15px;
+  color:#fff;
+  padding: 10px 24px;
+  background: #0bc7b4;
+  border-radius: 2px;
+  border:0px;
+  transition: all 0.3s;
+}
+.cyanFlatBtn:hover {
+  background:#fff;
+  color:#0bc7b4;
+}
+
+.titleByImage {
+  height:80px;
+  width:100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  margin-bottom:77px;
+}
+/*
+   需要额外定义： background-image
+*/
+
+#header {
+  height:75px;
+  position:relative;
+}
+#headerBg {
+  height:88px;
+  width:100%;
+  position:absolute;
+  background: url(../images/header_bg.png) repeat-x;
+  z-index:-1;
+}
+#logo {
+  width:153px;
+  height:108px;
+  background: url(../images/logo.png) no-repeat;
+}
+
+#mainMenu {
+  margin-left:185px;
+}
+#mainMenu li {
+  display:inline-block;
+  height: 73px;
+  border-top: 2px solid rgba(0,0,0,0);
+  padding: 0 20px;
+}
+#mainMenu a {
+  font-size:15px;
+  line-height: 73px;
+}
+#mainMenu a:hover {
+  color:#0bc7b4;
+}
+#mainMenu li:hover {
+  border-top: 2px solid #0bc7b4;
+}
+
+#content {
+  height: 815px;
+  position: relative;
+}
+#content .comWidth {
+  position: relative;
+}
+#contentBg {
+  background: url(../images/content_bg.png) no-repeat;
+  position:absolute;
+  height:831px;
+  width:100%;
+  z-index:-2;
+}
+#sliderLeft a, #sliderRight a {
+  display: inline-block;
+  width:100px;
+  height:100px;
+}
+#sliderLeft, #sliderRight {
+  position: absolute;
+  padding-top:310px;
+}
+#sliderRight {
+  right:0px;
+}
+#sliderLeft a {
+  background: url(../images/slider_left.png) no-repeat;
+}
+#sliderRight a {
+  background: url(../images/slider_right.png) no-repeat;
+}
+#sliderContent {
+  position: absolute;
+  left: 34px;
+  top: 140px;
+  width:843px;
+  height:410px;
+  background: url(../images/slider_bg.png) no-repeat;
+  padding:15px;
+}
+
+#sliderIndicators a {
+  display: inline-block;
+  width:20px;
+  height:20px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #999;
+}
+#sliderIndicators a.current {
+  background: #0bc7b4;
+}
+#sliderIndicators {
+  position: absolute;
+  top:620px;
+  width:100%;
+  text-align: center;
+}
+
+#sliderContent li.textSlide{
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+  padding:0px 20px;
+}
+#sliderContent li.imageSlide {
+  width:100%;
+  height: 100%;
+  /* background-repeat: no-repeat; */
+  background-position: center center;
+  background-size: cover;
+}
+#sliderContent ul {
+  width: 100%;
+  height: 100%;
+}
+#sliderContent h2 {
+  font-size:40px;
+  color: #0bc7b4;
+  margin-bottom:45px;
+}
+#sliderContent p {
+  font-size:20px;
+  color: #5b6872;
+}
+#sliderContent a {
+  margin-top:40px;
+}
+#slide2 {
+  background-image: url(../images/slide_2.jpg);
+}
+#slide3 {
+  background-image: url(../images/slide_3.jpg);
+}
+#contentText p{
+  font-size: 20px;
+  color:#5b6872;
+  text-align: center;
+}
+#contentText {
+  position: absolute;
+  top:694px;
+  width:630px;
+  left:155px;
+}
+
+
+
+#portfolio {
+  position:relative;
+  background: url(../images/camera_bg.png) no-repeat 15% 130%;
+}
+#portfolioTitle {
+  background-image: url(../images/portfolio_title.png); /* 不要用 background, 否则 background-repeat 等不会起效*/
+}
+
+.portfolioItem {
+  height:280px;
+}
+
+.portfolioItem img{
+  width:100%;
+  height:auto;
+}
+.portfolioItem .portfolioItemCaption {
+  position:absolute;
+  top:280px;
+  height:65px;
+  width:100%;
+  background: rgba(0,0,0,0.6);
+  padding:15px 13px;
+}
+.portfolioItemCaption h4 {
+  color: #0db7a7;
+  font-size:15px;
+  margin-bottom: 7px;
+}
+.portfolioItemCaption p {
+  color:#869198;
+  font-size:11px;
+}
+#portfolioPara {
+  padding-bottom: 30px;
+}
+.paraDivider {
+  width:100%;
+  height:6px;
+  background: url(../images/para_divider.png) no-repeat center center;
+  margin:28px 0px;
+}
+.paraDivider~p {
+  width:70%;
+  text-align:center;
+  position:relative;
+  left:15%;
+  font-size:20px;
+  color:#5e6c76;
+}
+
+
+#services {
+  height:505px;
+  background:#192c3b url(../images/services_bg.png) no-repeat 95% 130%;
+  position: relative;
+}
+.darkSectionHeader {
+  padding:60px 0px 25px 0px;
+  border-bottom:dashed 1px #8b9299;
+}
+.darkSectionHeader h2 {
+  color:#babfc4;
+  font-size:25px;
+}
+.serviceItems {
+  padding:45px 0px;
+}
+.serviceItem {
+  float:left;
+  width:280px;
+  height:288px;
+  position:relative;
+}
+.serviceItem+.serviceItem {
+  margin-left:50px;
+}
+.serviceItem .serviceIcon {
+  position:absolute;
+  width:100%;
+  text-align:center;
+}
+.serviceItem .serviceContent {
+  position:absolute;
+  width:240px;
+  height:192px;
+  top:38px;
+  background: url(../images/service_item_bg.png);
+  padding: 20px;
+}
+.serviceItem .serviceContent h3 {
+  font-size:20px;
+  color:#fff;
+  margin-bottom:30px;
+  text-align: center;
+}
+.serviceItem .serviceContent p {
+  font-size: 15px;
+  color: #888f94;
+}
+.serviceItem .serviceButton {
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  text-align:center;
+}
+
+#aboutUs {
+  position: relative;
+  /* 不用 background ，避免与原有的 background-color 冲突 */
+  background-image: url(../images/about_us_bg.png);
+  background-repeat: no-repeat;
+  background-position: 90% 102%;
+}
+#aboutUsTitle {
+  background-image: url(../images/about_us_title.png);
+}
+.personItem {
+  height:460px;
+  position: relative;
+  
+}
+.personItem .personPhoto {
+  width:100%;
+  height:auto;
+  
+  /*消除图片底下的间隙*/
+  margin:0;
+  display: block;
+}
+.personInfo {
+  height: 130px;
+  background: #fff;
+  border-bottom: 2px solid #d4d5d9;
+  padding: 15px 25px;
+}
+.personInfo h4,.personInfo .personDetail {
+  font-size: 15px;
+  color: #5e6c76;
+  font-weight: normal;
+}
+.personInfo h4 {
+  margin-bottom:3px;
+}
+
+.personInfo .job {
+  font-size: 11px;
+  color: #0bc7b4;
+  margin-bottom:5px;
+}
+.personInfoSeparator {
+  width:100%;
+  height:5px;
+  background: url(../images/person_info_separator.png) no-repeat;
+  background-size: contain; /* does it work? */
+  margin-bottom:8px;
+}
+.personBtnContainer {
+  position: absolute;
+  width: 100%;
+  text-align:center;
+  bottom:0px;
+}
+.aboutUsTextItem h3 {
+  font-size:25px;
+  color: #5e6c76;
+  margin-bottom: 18px;
+}
+.aboutUsTextItem p {
+  font-size: 15px;
+  color: #869097;
+  margin-bottom: 18px;
+}
+.aboutUsTextSeparator {
+  width:100%;
+  height:4px;
+  background: url('../images/about_us_text_separator.png') no-repeat;
+  background-size: contain;
+  margin-bottom: 25px;
+}
+.levelBar {
+  width:100%;
+  height:34px;
+  background-color:#192c3b;
+  margin-bottom: 30px;
+}
+.levelBarFull {
+  background-color:#0bc7b4;
+  color:#fff;
+  font-size: 15px;
+  padding:10px;
+  height:100%;
+  box-sizing: border-box;
+}
+
+#scrollToTop{
+  height:190px;
+  background-color:#192c3b;
+  position: relative;
+}
+#scrollToTopContent {
+  position: relative;
+  width:608px;
+  height:98px;
+  background: url(../images/scroll_to_top_bg.png) no-repeat;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding:0px 45px;
+}
+#scrollToTopContent p,#scrollToTopContent .buttonContainer {
+  line-height: 98px;
+}
+#scrollToTopContent p {
+  font-size:20px;
+  color:white;
+}
+#scrollToTopContent  button {
+  padding:15px 35px;
+  background-color:#fff;
+  color:#0bc7b4;
+  font-size:15px;
+  border:0px;
+  border-radius: 3px;
+  transition:all 0.3s;
+}
+#scrollToTopContent  button:hover{
+  background-color:#0bc7b4;
+  color:#fff;
+}
+
+#price {
+  position: relative;
+}
+#priceTitle {
+  background-image: url(../images/price_title.png);
+}
+.priceItem {
+  height:380px;
+  text-align: center;
+  position: relative;
+}
+.priceItemTitle { /* 叫header更合适 */
+  height:90px;
+  background-color: #192c3b;
+  padding: 24px 0;
+  box-sizing: border-box;
+  color: #d1d5d8;
+}
+.priceItemTitle h4 {
+  font-size:24px;
+  margin-bottom: 6px;
+}
+.priceItemTitle p {
+  font-size: 14px;
+}
+.priceItemValue {
+  height:45px;
+  background-color: #0bc7b4;
+}
+.priceItemValue p {
+  font-size:19px;
+  line-height:45px;
+  color: #fff;
+}
+.priceItemSpecifics {
+  height:230px;
+  background-color: #f4f4f4;
+  background-image: url(../images/price_bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  font-size: 17px;
+}
+.priceItemSpecifics li {
+  width:140px;
+  position: relative;
+  left:70px;
+  padding: 14px 0px;
+  color: #5b6873;
+}
+.priceItemSpecifics li+li {
+  border-top:dotted 1px #5b6873;
+}
+.priceItemSpecifics .priceHighlight {
+  color: #0bc7b4;
+}
+.priceItemBtnContainer {
+  position: absolute;
+  bottom:0px;
+  width:100%;
+  text-align:center;
+}
+.priceItemTitle.premium {
+  background-image: url(../images/ribbon_value.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#contactUs {
+  position: relative;
+}
+#contactUsTitle {
+  background-image: url(../images/contact_us_title.png);
+}
+#contactUsForm {
+  width:460px;
+}
+.formRow {
+  margin-bottom:20px;
+}
+#contactUsForm input.halfWidth {
+  width:220px;
+}
+#contactUsForm input, #contactUsForm textarea {
+  background-color:#162432;
+  border-radius:4px;
+  border:0px;
+  padding: 15px;
+  color:#eee;
+}
+#contactUsForm input {
+  height:40px;
+}
+#contactUsForm textarea {
+  height: 135px;
+  width:100%;
+}
+#contactInfo {
+  margin-left:40px;
+  background: url(../images/contact_map.png) no-repeat;
+  padding-bottom:35px; /* to show the full map background */
+}
+.contactInfoRow {
+  margin-bottom:30px;
+}
+.contactInfoTitle {
+  margin-left:45px;
+  float:left;
+  padding-left: 50px;
+  background-image: url(../images/contact_icons.png);
+  background-repeat: no-repeat;
+  font-size: 15px;
+  color:#0bc7b4;
+  height:26px;
+  /* line-height:26px; */
+  width:140px;
+}
+.contactInfoContent {
+/* no need to specify width? */
+  float:left;
+  font-size:15px;
+  color:#8c969d;
+}
+#contactAddress .contactInfoTitle {
+  background-position:0px -208px;
+}
+#contactTelephone .contactInfoTitle{
+  background-position:0px -104px;
+}
+#contactOpeningTime .contactInfoTitle{
+  background-position:0px 0px;
+}
+
+footer {
+  height: 100px;
+  background-color: #162432;
+  border-bottom: 3px solid #0bc7b4;
+}
+#footerContent {
+  line-height: 100px;
+  font-size: 15px;
+  color: #8b9299;
+  padding-left: 50px;
+  background: url(../images/footer_logo.png) no-repeat 0px 34px;
+}
+
+.turnBig {
+  transform: scale(1.2);
+}
