@@ -222,6 +222,7 @@ h3.subTitle {
 #sliderContent ul {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 #sliderContent h2 {
   font-size:40px;
