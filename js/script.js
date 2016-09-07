@@ -1,4 +1,5 @@
-(function(){
+$(window).load(function(){
+
 
   var currentSlide = 0;
   var lastSlide = $('#sliderContent li').length-1;
@@ -78,8 +79,9 @@
     var newSlide = currentSlide===lastSlide?0:currentSlide+1;
     responseToSlideChange(newSlide);
   });
+});
 
-})();
+
   
 $('.portfolioItem').hover(
   function(){
