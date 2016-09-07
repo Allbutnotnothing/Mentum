@@ -31,7 +31,7 @@
     slideTimer = setInterval(function(){
       currentSlide = currentSlide===lastSlide?0:currentSlide+1;
       showThenHideCurrent();
-    },2000);
+    },2010);
   }
   function responseToSlideChange(newSlide){
     clearInterval(slideTimer);
